@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie List</title>
+    <!-- link of main css -->
     <link rel="stylesheet" href="style.css">
+    <!-- link of bootstrap css -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- link of bootstrap-icon -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
 </head>
 <body>
     <!-- start project -->
@@ -20,10 +24,17 @@
         </div>
         <!-- end add movie part -->
          <!-- start movie list part -->
-          <div class="movieList d-flex col-md-8 border border-light p-3 mx-auto mt-3 flex-row flex-wrap ">
-            <h3 class="text-warning col-12">List Of Movies</h3>
+          <div class="movieList d-flex col-md-8 border border-light p-3 mx-auto mt-3 flex-row flex-wrap position-relative ">
+            <h3 class="text-warning col-12 mb-4">List Of Movies</h3>
+            <!-- filter icon -->
+            <i class="bi bi-funnel-fill position-absolute" id="filterBtn"></i>
+            <div class="hiddenFilterSec border border-light position-relative col-12 mx-auto p-2 " id="filterSec">
+                <i class="bi bi-x-square-fill text-warning position-absolute"></i>
+                <input type="text" placeholder="find movie" class="p-1 bg-dark text-light mb-1 col-md-8 mx-2">
+                <button type="button" id="searchBtn" class="searchBtn col-md-3 mx-2 p-1 mb-1">Search</button>
+            </div>
+            <!-- list of movies -->
             <ul class="listGroup col-12 mt-4 ">
-                
             </ul>
 
             
