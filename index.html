@@ -13,12 +13,21 @@
         <!-- create add movie part -->
         <div class="addMovie d-flex col-md-8 border border-light p-3 mx-auto mt-3 flex-row flex-wrap ">
             <h3 class="text-warning col-12">Add Movie</h3>
-            <form action="" onchange="" class="form-group d-flex flex-row flex-wrap col-12 mx-auto mt-4">
-                <input type="text" class="col-md-8 addInput p-1 bg-dark text-light" placeholder="type the movie name">
-                <button class="mx-4 addButton col-md-3">Add</button>
+            <form action="" class="form-group d-flex flex-row flex-wrap col-12 mx-auto mt-4">
+                <input type="text" id="addMovieInput"  class="col-md-8 addInput p-1 bg-dark text-light" placeholder="type the movie name">
+                <button class="mx-4 addButton col-md-3" type="button" onclick="addMovie()">Add</button>
             </form>
-
         </div>
+        <!-- end add movie part -->
+         <!-- start movie list part -->
+          <div class="movieList d-flex col-md-8 border border-light p-3 mx-auto mt-3 flex-row flex-wrap ">
+            <h3 class="text-warning col-12">List Of Movies</h3>
+            <ul class="listGroup col-12 mt-4 ">
+                
+            </ul>
+
+            
+          </div>
     </section>
     <!-- end project -->
      <!-- add js file of bootstrap -->

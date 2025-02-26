@@ -26,3 +26,9 @@
         color: #717171;
     }
 }
+.listGroup{
+    list-style: none;
+    >li{
+        color: #ccc;
+    }
+}
