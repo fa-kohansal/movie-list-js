@@ -11,27 +11,27 @@
     <!-- link of bootstrap-icon -->
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="bg-dark">
     <!-- start project -->
     <section class=" bg-dark col-12 m-0 p-2" >
         <!-- create add movie part -->
-        <div class="addMovie d-flex col-md-8 border border-light p-3 mx-auto mt-3 flex-row flex-wrap ">
+        <div class="addMovie d-flex col-xl-8 col-lg-11 col-md-12 border border-md-light p-3 mx-auto mt-3 flex-row flex-wrap ">
             <h3 class="text-warning col-12">Add Movie</h3>
             <form action="" class="form-group d-flex flex-row flex-wrap col-12 mx-auto mt-4" >
-                <input type="text" id="addMovieInput"  class="col-md-8 addInput p-1 bg-dark text-light" placeholder="type the movie name">
-                <button class="mx-4 addButton col-md-3" type="button" onclick="addMovie()">Add</button>
+                <input type="text" id="addMovieInput"  class="col-md-8 col-12 addInput p-1 bg-dark text-light mb-3" placeholder="type the movie name">
+                <button class="mx-md-4 addButton col-md-2 col-3 p-1 mb-3" type="button" onclick="addMovie()">Add</button>
             </form>
         </div>
         <!-- end add movie part -->
          <!-- start movie list part -->
-          <div class="movieList d-flex col-md-8 border border-light p-3 mx-auto mt-3 flex-row flex-wrap position-relative ">
+          <div class="movieList d-flex col-xl-8 col-lg-11 col-sm-12  border border-light p-3 mx-auto mt-3 flex-row flex-wrap position-relative ">
             <h3 class="text-warning col-12 mb-4">List Of Movies</h3>
             <!-- filter icon -->
             <i class="bi bi-funnel-fill position-absolute" id="filterBtn"></i>
             <div class="hiddenFilterSec border border-light position-relative col-12 mx-auto p-2 " id="filterSec">
                 <i class="bi bi-x-square-fill text-warning position-absolute"></i>
-                <input type="text" placeholder="find movie" id="filterInput" class="p-1 bg-dark text-light mb-1 col-md-8 mx-2">
-                <button type="button" id="searchBtn" class="searchBtn col-md-3 mx-2 p-1 mb-1" onclick="filterItems()">Search</button>
+                <input type="text" placeholder="find movie" id="filterInput" class="p-1 bg-dark text-light mb-1 col-md-8 col-11 mb-2 mx-2">
+                <button type="button" id="searchBtn" class="searchBtn col-md-2 col-3  mx-2 p-1 mb-1" onclick="filterItems()">Search</button>
             </div>
             <!-- list of movies -->
             <ul class="listGroup col-12 mt-4 ">
