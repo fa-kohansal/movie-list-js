@@ -6,10 +6,13 @@ let closeBtn = document.querySelector(".bi-x-square-fill");
 let filterInput = document.querySelector("#filterInput");
 let li = document.createElement("li");
 let myMovie=[]
+
+//function for clearing add input 
 let clearInput = () => {
     inp.value = ""; 
 }
 
+// function for adding movie name on movie list 
 function addMovie() {
     let userTypedText = inp.value;
     if(userTypedText.trim()===""){
@@ -18,16 +21,15 @@ function addMovie() {
     else{
         myMovie.push(userTypedText);
         console.log(myMovie);
-        // myMovie.forEach((movie) => {
-        //     li.textContent = movie;
-        //     movieList.appendChild(li);
-        // });
+        
         displayMovies(myMovie)
         clearInput();
 
     }
     
 }
+
+// function for showing the movie's name on the list
 function displayMovies(movies){
     movieList.innerHTML= "";
     movies.forEach((movie)=>{
@@ -37,18 +39,23 @@ function displayMovies(movies){
     })
 }
 
+// function for filtering the movie list
 filterBtn.addEventListener("click",()=>{
     console.log("ok");
     
     filterSec.classList.remove("hiddenFilterSec");
     filterSec.classList.add("filterSec");
 })
+
+// function for closing the filter section
 closeBtn.addEventListener("click",()=>{
     filterSec.classList.add("hiddenFilterSec");
     filterSec.classList.remove("filterSec");
         displayMovies(myMovie);
 
 })
+
+// filter for movie list
 function filterItems(){
     let filterText = filterInput.value.toLowerCase();
     let filteredMovie= myMovie.filter(movie=>movie.toLowerCase().includes(filterText));
